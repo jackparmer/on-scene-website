@@ -230,9 +230,9 @@ img {
         .credits {
             margin: 5vh;
         }  
-        li {
-            display: block;
-        }             
+        img {
+            max-height: 30px !important;
+        }    
     }
 
 
