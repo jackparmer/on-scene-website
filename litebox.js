@@ -63,3 +63,29 @@ document.addEventListener(
     },
     false
   );
+
+/* mobile copy clipboard */
+document.addEventListener(
+  "touchend",
+  function (event) {
+    // Only fire if the target has id copy
+    if (!event.target.matches("#copy")) return;
+
+    if (!navigator.clipboard) {
+      // Clipboard API not available
+      return;
+    }
+    const text = event.target.value;
+    try {
+      navigator.clipboard.writeText(text);
+      document.getElementById("copy-status").innerText = "🧞‍♂️ copied";
+      setTimeout(function () {
+        document.getElementById("copy-status").innerText = "👈 click to copy";
+      }, 1200);
+    } catch (err) {
+      console.error("Failed to copy!", err);
+    }
+  },
+  false
+);
+

@@ -7,7 +7,7 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    background: url('https://res.cloudinary.com/dhopxs1y3/image/upload/v1681782202/nitesky_wuor6r.webp') repeat-y center;
+    background: url('https://res.cloudinary.com/dhopxs1y3/image/upload/q_auto/v1681782202/nitesky_wuor6r.jpg') repeat-y center;
     background-size: cover;
     cursor: crosshair;    
     margin: 0;
@@ -226,7 +226,7 @@ img {
         }  
         img {
             max-height: 30px !important;
-        }    
+        }          
     }
 
 
