@@ -4,12 +4,12 @@
   }
 
 body {
-    background-color: black;
+    background: linear-gradient(0, black, rgb(3,4,8));
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    background: url('https://res.cloudinary.com/dhopxs1y3/image/upload/q_auto/v1681782202/nitesky_wuor6r.jpg') repeat-y center;
+    background: url('https://res.cloudinary.com/dhopxs1y3/image/upload/q_auto/v1681782202/os.studio/nitesky_wuor6r.jpg') repeat-y center;
     background-size: cover;
-    cursor: crosshair;    
+    cursor: crosshair;
     margin: 0;
 }
 
@@ -179,6 +179,38 @@ img {
     }
   }
 
+.byline{
+    color: white;
+    margin-bottom: 10vh;
+}
+
+.contact-card {
+    background: black;
+    border: 2px solid white;
+    padding: 2vh 5vh;
+    margin: 0 auto;
+    max-width: 300px;
+    display: flex; 
+    flex-direction: row;
+}
+
+.contact-card div {
+    width: 50%;
+}
+
+.contact-card ul {
+    list-style: none;
+    text-align: right;
+}
+
+.contact-card ul li {
+    margin-bottom: 2vh;
+}
+
+.spacer-footer {
+    height: 10vh;
+    background: rgb(3,4,8);
+}
 
 /* MOBILE */
 
